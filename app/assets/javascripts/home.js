@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   FixTabPosition();
   HideAllTabsContent();
-  ShowActiveTabContent();
+  ShowActiveTabContent(0);
 
   // Tab click event
   $('.tab-item').on('click', function() {
@@ -20,9 +20,11 @@ $(document).ready(function() {
       $('.active').removeClass('active');
       // Add active class to clicked element and show its content (after .5 sec)
       $(this).addClass('active');
-      setTimeout(ShowActiveTabContent, 500);
+
+      var topY = $(document).scrollTop();
+      setTimeout(ShowActiveTabContent(topY), 500);
     }
-  })
+  });
 
   // Hide all contents
   function HideAllTabsContent() {
@@ -32,10 +34,12 @@ $(document).ready(function() {
   }
 
   // Show active tab content
-  function ShowActiveTabContent() {
+  function ShowActiveTabContent(topY) {
     var contentId = $('.active a').data('open');
 
-    $(contentId).fadeIn();
+    $(contentId).fadeIn(function() {
+      $(document).scrollTop(topY);
+    });
   }
 
   // Fix tab y position bug, when window width <= 1412
