@@ -7,26 +7,34 @@
 
     li {
       padding: 20px 10px 20px 10px;
-      background-color: black;
+      background-color: white;
       transition: all .5s ease;
       border-radius: 15px 15px 0 0;
       min-width: 150px;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
 
       &.active {
-        background-color: white;
-        font-weight: bold;
+        background-color: #414141;
+
+        a {
+          color: #BBB;
+          font-weight: bold;
+        }
       }
 
       &:hover {
-        background-color: white;
+        background-color: #414141;
+
+        a {
+          color: #BBB;
+        }
       }
 
       a {
         color: #777777;
         text-decoration: none;
-        cursor: pointer;
         font-size: 18px;
       }
     }
