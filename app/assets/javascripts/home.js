@@ -7,6 +7,7 @@ $(document).ready(function() {
               'Send me a message if you think I can improve my coding. Or if you want to share nice words to me.\n' +
               'Hope to the you again soon. See ya!');
 
+  FixTabPosition();
   HideAllTabsContent();
   ShowActiveTabContent();
 
@@ -35,5 +36,13 @@ $(document).ready(function() {
     var contentId = $('.active a').data('open');
 
     $(contentId).fadeIn();
+  }
+
+  // Fix tab y position bug, when window width <= 1412
+  // There is still a bug when width is beetwen 1413 and 1420
+  function FixTabPosition() {
+    if ($(document).width() <= 1412) {
+      $('ul').css('bottom', '6px');
+    }
   }
 })

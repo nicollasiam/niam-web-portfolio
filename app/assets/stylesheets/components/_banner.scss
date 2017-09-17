@@ -1,6 +1,7 @@
 .banner-wrapper {
   width: 100%;
-  height: 800px;
+  max-height: 800px;
+  position: relative;
   overflow: hidden;
 
   video {

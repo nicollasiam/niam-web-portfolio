@@ -1,9 +1,12 @@
-.tabs-wrapper {
-  width: 100%;
-
+.banner-wrapper {
   ul {
     width: fit-content;
-    margin: -65px auto 0 auto;
+    margin: 0 auto;
+    position: absolute;
+    max-height: 67px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     li {
       padding: 20px 10px 20px 10px;
@@ -11,8 +14,6 @@
       transition: all .5s ease;
       border-radius: 15px 15px 0 0;
       min-width: 150px;
-      position: relative;
-      overflow: hidden;
       cursor: pointer;
 
       &.active {
