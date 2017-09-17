@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  console.log('Hey! It\'s good to see you here!\n' +
+              'So, I supose you are trying to have a glimpse at the code, right?\n' +
+              'Don\'t bother! I don\'t mind sharing the code with you.\n' +
+              'Just visit https://github.com/nicollasiam/niam-web-portfolio and save your time! =)\n' +
+              'I hope you liked it. And the most important:\n'+
+              'Send me a message if you think I can improve my coding. Or if you want to share nice words to me.\n' +
+              'Hope to the you again soon. See ya!');
 
   HideAllTabsContent();
   ShowActiveTabContent();
