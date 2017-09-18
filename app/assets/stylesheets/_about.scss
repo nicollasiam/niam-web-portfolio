@@ -1,4 +1,6 @@
 #about {
+  margin-bottom: 50px;
+
   .img-front {
     max-width: 100%;
   }
@@ -6,5 +8,15 @@
   .img-back {
     padding-left: 70px;
     max-height: 160px;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 50px;
+
+    li {
+      padding: 10px 0;
+      font-size: 20px;
+    }
   }
 }

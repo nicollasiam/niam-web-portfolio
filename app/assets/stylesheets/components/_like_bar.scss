@@ -1,0 +1,68 @@
+.like-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px 0;
+
+  .like-bar {
+    border-top: 3px solid;
+    position: relative;
+    width: 80%;
+
+    .like-meter {
+      position: absolute;
+      height: 20px;
+      top: -11px;
+      border-right: 2px solid;
+    }
+  }
+}
+
+#forest-city {
+  .like-meter {
+    left: 80%;
+  }
+}
+
+#car-plane {
+  .like-meter {
+    left: 30%;
+  }
+}
+
+#apple-pizza {
+  .like-meter {
+    left: 85%;
+  }
+}
+
+#sun-moon {
+  .like-meter {
+    left: 90%;
+  }
+}
+
+#hot-cold {
+  .like-meter {
+    left: 75%;
+  }
+}
+
+#bicycle-bus {
+  .like-meter {
+    left: 25%;
+  }
+}
+
+#apple-linux {
+  .like-meter {
+    left: 95%;
+  }
+}
+
+#physical-virtual {
+  .like-meter {
+    left: 65%;
+  }
+}
