@@ -1,0 +1,25 @@
+footer {
+  height: 100px;
+  background-color: #999999;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: white;
+    margin-bottom: 0;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 0 10px;
+      transition: all .3s ease;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

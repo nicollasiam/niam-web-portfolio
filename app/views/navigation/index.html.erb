@@ -10,117 +10,30 @@
 </div>
 
 <div class="content-wrapper">
-  <div class="container" id="about">
-    <div class="row">
-      <div class="col-xs-8">
-        <h1 class="col-xs-6 col-xs-offset-2">I'm a Full Stack developer from Rio de Janeiro, Brazil.</h1>
-        <h3 class="col-xs-8 col-xs-offset-2 text-justify">This means I can develop a full application: Develop both the Front-end, which is the page's layout and the Back-end, which is the logic and database interaction.</h3>
-        <p class="col-xs-8 col-xs-offset-2 text-justify">I'm always ready for a new adventure! Learning new stuff is my hobbie. When I'm not coding, you can always find me in the virtual world or in the kitchen.</p>
-      </div>
 
-      <div class="col-xs-4">
-        <div class="row">
-          <div class="col-xs-12">
-            <%= image_tag 'html-css-js', class: 'img-front' %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <%= image_tag 'ruby-on-rails', class: 'img-back' %>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <h2 class="text-center">Random Facts</h2>
-      <div class="col-xs-5">
-        <h2>I would rather...</h2>
-        <div id="forest-city" class="like-item">
-          <i class="fa fa-tree" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-building-o" aria-hidden="true"></i>
-        </div>
-
-        <div id="car-plane" class="like-item">
-          <i class="fa fa-car" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-plane" aria-hidden="true"></i>
-        </div>
-
-        <div id="apple-pizza" class="like-item">
-          <i class="fa fa-apple" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-cutlery" aria-hidden="true"></i>
-        </div>
-
-        <div id="sun-moon" class="like-item">
-          <i class="fa fa-sun-o" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-moon-o" aria-hidden="true"></i>
-        </div>
-
-        <div id="hot-cold" class="like-item">
-          <i class="fa fa-thermometer-full" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
-        </div>
-
-        <div id="bicycle-bus" class="like-item">
-          <i class="fa fa-bicycle" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-bus" aria-hidden="true"></i>
-        </div>
-
-        <div id="apple-linux" class="like-item">
-          <i class="fa fa-apple" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-linux" aria-hidden="true"></i>
-        </div>
-
-        <div id="physical-virtual" class="like-item">
-          <i class="fa fa-futbol-o" aria-hidden="true"></i>
-          <div class="like-bar">
-            <div class="like-meter"></div>
-          </div>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-xs-offset-1">
-        <ul class="facts-list">
-          <li>I absolutely love dogs</li>
-          <li>I want to be a Pokémon Trainer</li>
-          <li>I want to have super mutant memory</li>
-          <li>I am addicted to chocolate</li>
-          <li>I hate the green color</li>
-          <li>I have arachnophobia</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <%= render 'shared/about' %>
 
   <div class="container" id="skills">
     <div class="row">
-      <div class="col-xs-12">
-        <h1>area 2</h1>
+      <div class="col-xs-12 text-center">
+        <h1>Everybody got some skills. I got in:</h1>
+        <ul class="list-inline skill-list">
+          <li class="skill-dev active-skill">Full Stack Developing</li>
+          <li class="skill-cook">Cooking</li>
+          <li class="skill-game">Gaming</li>
+          <li class="skill-pkm">Pokemon Training</li>
+        </ul>
       </div>
+    </div>
+
+    <div class="skill-set">
+      <h3 class="skill-description text-center">I'm always trying to learn new technologies as well as improving the ones I already have.</h3>
+      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_1', skill: 'HTML', level: '90' } %>
+      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_2', skill: 'CSS', level: '80' } %>
+      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_3', skill: 'JAVASCRIPT', level: '65' } %>
+      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_4', skill: 'RUBY', level: '75' } %>
+      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_5', skill: 'RAILS', level: '75' } %>
+      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_6', skill: 'JAVA', level: '40' } %>
     </div>
   </div>
 
@@ -132,7 +45,8 @@
     </div>
   </div>
 
-  <div class="container" id="contact">
-    <%= render 'shared/contact' %>
-  </div>
+
+  <%= render 'shared/contact' %>
 </div>
+
+<%= render 'shared/footer' %>

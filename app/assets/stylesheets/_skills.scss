@@ -1,0 +1,76 @@
+#skills {
+  h1 {
+    padding: 20px;
+  }
+
+  .skill-list {
+    padding-bottom: 20px;
+
+    li {
+      padding: 0 30px;
+      cursor: default;
+    }
+  }
+
+  .active-skill {
+    color: white;
+    font-weight: bold;
+  }
+
+  .skill-set {
+    margin-bottom: 50px;
+
+    h3 {
+      padding-bottom: 30px;
+    }
+
+    .skill-item {
+      padding: 10px 0;
+    }
+
+    .like-bar {
+      width: 100%;
+    }
+
+    .like-meter {
+      transition: all .5s ease;
+    }
+
+  }
+}
+
+#skill_1 {
+  .like-meter {
+    left: 90%;
+  }
+}
+
+#skill_2 {
+  .like-meter {
+    left: 80%;
+  }
+}
+
+#skill_3 {
+  .like-meter {
+    left: 65%;
+  }
+}
+
+#skill_4 {
+  .like-meter {
+    left: 75%;
+  }
+}
+
+#skill_5 {
+  .like-meter {
+    left: 75%;
+  }
+}
+
+#skill_6 {
+  .like-meter {
+    left: 40%;
+  }
+}
