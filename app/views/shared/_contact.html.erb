@@ -41,12 +41,14 @@
           </div>
 
           <div class="col-xs-3 text-center">
-            <div class="contact-choice">
-              <i class="fa fa-file-text choice-logo" aria-hidden="true"></i>
-              <hr>
-              <h3 class="choice-name">Resume</h3>
-              <p class="choice-description">Also, feel free to download my Resume!</p>
-            </div>
+            <%= link_to cl_image_path('CV_Nicollas_Isabel_ognzyo'), target: '_blank' do %>
+              <div class="contact-choice">
+                <i class="fa fa-file-text choice-logo" aria-hidden="true"></i>
+                <hr>
+                <h3 class="choice-name">Resume</h3>
+                <p class="choice-description">Also, feel free to download my Resume!</p>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
