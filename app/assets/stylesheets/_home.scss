@@ -10,3 +10,19 @@ body {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
+.banner-wrapper {
+  position: relative;
+
+  .banner-text {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    color: white;
+
+    h1 {
+      font-size: 100px;
+      font-weight: bold;
+    }
+  }
+}
