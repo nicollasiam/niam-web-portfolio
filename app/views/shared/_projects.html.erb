@@ -9,7 +9,7 @@
     <div class="col-xs-4">
       <div class="project-card">
         <%= link_to 'http://www.tripdeo.net', target: '_blank' do %>
-          <div class="project-image" style="background-image: url(<%= image_url 'tripdeo' %>);"></div>
+          <div class="project-image" style="background-image: url('<%= cl_image_path "tripdeo_agbo19" %>');"></div>
         <% end %>
         <hr>
         <div class="project-content text-center">
@@ -21,7 +21,7 @@
 
     <div class="col-xs-4">
       <div class="project-card">
-        <div class="project-image" style="background-image: url(<%= image_url 'makeyourmake' %>);  background-size: cover;"></div>
+        <div class="project-image" style="background-image: url('<%= cl_image_path "makeyourmake_ripaxv" %>');  background-size: cover;"></div>
         <hr>
         <div class="project-content text-center">
           <h2 class="project-name">MakeYourMake</h2>
@@ -33,7 +33,7 @@
     <div class="col-xs-4">
       <div class="project-card">
         <%= link_to 'https://ldjam.com/events/ludum-dare/39/abunaimachi', target: '_blank' do %>
-          <div class="project-image" style="background-image: url(<%= image_url 'abunaimachi' %>); background-size: cover;"></div>
+          <div class="project-image" style="background-image: url('<%= cl_image_path "abunaimachi_srst9j" %>'); background-size: cover;"></div>
         <% end %>
         <hr>
         <div class="project-content text-center">

@@ -9,12 +9,12 @@
     <div class="col-xs-4">
       <div class="row">
         <div class="col-xs-12">
-          <%= image_tag 'html-css-js', class: 'img-front' %>
+          <%= cl_image_tag ENV['HTML_CSS_JS'], class: 'img-front' %>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <%= image_tag 'ruby-on-rails', class: 'img-back' %>
+          <%= cl_image_tag ENV['RUBY_ON_RAILS'], class: 'img-back' %>
         </div>
       </div>
     </div>
