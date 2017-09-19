@@ -10,42 +10,9 @@
 </div>
 
 <div class="content-wrapper">
-
   <%= render 'shared/about' %>
-
-  <div class="container" id="skills">
-    <div class="row">
-      <div class="col-xs-12 text-center">
-        <h1>Everybody got some skills. I got in:</h1>
-        <ul class="list-inline skill-list">
-          <li class="skill-dev active-skill">Full Stack Developing</li>
-          <li class="skill-cook">Cooking</li>
-          <li class="skill-game">Gaming</li>
-          <li class="skill-pkm">Pokemon Training</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="skill-set">
-      <h3 class="skill-description text-center">I'm always trying to learn new technologies as well as improving the ones I already have.</h3>
-      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_1', skill: 'HTML', level: '90' } %>
-      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_2', skill: 'CSS', level: '80' } %>
-      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_3', skill: 'JAVASCRIPT', level: '65' } %>
-      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_4', skill: 'RUBY', level: '75' } %>
-      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_5', skill: 'RAILS', level: '75' } %>
-      <%= render partial: 'shared/skill', locals: { elem_id: 'skill_6', skill: 'JAVA', level: '40' } %>
-    </div>
-  </div>
-
-  <div class="container" id="projects">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1>area 2</h1>
-      </div>
-    </div>
-  </div>
-
-
+  <%= render 'shared/skills' %>
+  <%= render 'shared/projects' %>
   <%= render 'shared/contact' %>
 </div>
 

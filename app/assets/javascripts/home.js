@@ -12,8 +12,19 @@ $(document).ready(function() {
   ShowActiveTabContent(0);
 
   // Tab click event
-  $('.tab-item').on('click', function() {
-    if (!$(this)[0].classList.contains('active')) {
+  $('.tab-item, .contact-me').on('click', function() {
+    if($(this)[0].classList.contains('contact-me')) {
+      // Hide active content
+      $($('.active a').data('open')).fadeOut();
+      // Remove active class from previous active element
+      $('.active').removeClass('active');
+      // Add active class to contact tab area and show its content (after .5 sec)
+      $($('.tabs').children()[3]).addClass('active');
+
+      var topY = $(document).scrollTop();
+      setTimeout(ShowActiveTabContent(topY), 500);
+    }
+    else if (!$(this)[0].classList.contains('active')) {
       // Hide active content
       $($('.active a').data('open')).fadeOut();
       // Remove active class from previous active element

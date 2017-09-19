@@ -1,0 +1,57 @@
+<div class="container" id="projects">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center">These are some projects I've worked on. Some are still in progress!</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="project-card">
+        <%= link_to 'http://www.tripdeo.net', target: '_blank' do %>
+          <div class="project-image" style="background-image: url(<%= image_url 'tripdeo' %>);"></div>
+        <% end %>
+        <hr>
+        <div class="project-content text-center">
+          <h2 class="project-name">Tripdeo</h2>
+          <p class="project-description">Tripdeo is a website where you can plan your trip. But not the borring way, searching through tons of websites and creating countless worksheets. With TripDeo you can find everything in one place. Informative videos and all the information you need. Create you own personal guide for each trip. (Still in progress)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div class="project-card">
+        <div class="project-image" style="background-image: url(<%= image_url 'makeyourmake' %>);  background-size: cover;"></div>
+        <hr>
+        <div class="project-content text-center">
+          <h2 class="project-name">MakeYourMake</h2>
+          <p class="project-description">MakeYourMake is an idea that is growing by the lack of websites that connects people with makeup artists. (Still in progress)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div class="project-card">
+        <%= link_to 'https://ldjam.com/events/ludum-dare/39/abunaimachi', target: '_blank' do %>
+          <div class="project-image" style="background-image: url(<%= image_url 'abunaimachi' %>); background-size: cover;"></div>
+        <% end %>
+        <hr>
+        <div class="project-content text-center">
+          <h2 class="project-name">Abunaimachi</h2>
+          <p class="project-description">Abunaimachi is game developed for a game challenge proposed by Ludum dare. It was developed in a 48 hours sprint. You are an intern responsible for solving a leak of uranium in a nuclear plant. Check it out!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-offset-3 col-xs-6">
+      <div class="awesome-project-card">
+        <div class="project-image text-center"><h2>Awesome Project</h2></div>
+        <hr>
+        <div class="project-content text-center">
+          <h2 class="project-name">Your Project</h2>
+          <p class="project-description">Want to join this list? The next awesome project may be yours! All you have to do is <a class="contact-me"><strong>Contact Me!</strong></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
